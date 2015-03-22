@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="myApp">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="angular-route.min.js"></script>
+      <script src="http-auth-interceptor.js"></script>
+    </head>
+    <body>
+        <div>
+            <form ng-controller="loginController" ng-submit="auth()">
+                <input type="text" name="username" ng-model="fields.username" ng-submit="auth()" />
+                <br>
+                <input type="password" name="password" ng-model="fields.password"/>
+                <br>
+                <input type="submit"/>
+                
+            </form>
+            
+        </div>
+    </body>
+</html>
